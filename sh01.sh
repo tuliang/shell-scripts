@@ -6,6 +6,7 @@ echo "Install RVM"
 # 环境变量
 echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"' >>~/.bashrc
 source ~/.bashrc
+source ~/.bash_profile
 
 # ruby更改为taobao源
 sed -i 's!cache.ruby-lang.org/pub/ruby!ruby.taobao.org/mirrors/ruby!' $rvm_path/config/db
