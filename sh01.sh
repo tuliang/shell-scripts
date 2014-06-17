@@ -4,7 +4,7 @@ echo "Hello!"
 
 \curl -sSL https://get.rvm.io | bash -s stable
 
-echo "source $HOME/.rvm/scripts/rvm" >> ~/.bashrc
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile
 
 sed -i 's!cache.ruby-lang.org/pub/ruby!ruby.taobao.org/mirrors/ruby!' $rvm_path/config/db
 
