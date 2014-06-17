@@ -14,6 +14,7 @@ source ~/.bash_profile
 sed -i 's!cache.ruby-lang.org/pub/ruby!ruby.taobao.org/mirrors/ruby!' $rvm_path/config/db
 
 rvm install 2.1.1
+rvm use 2.1.1 --default
 
 ruby -v
 
