@@ -6,6 +6,8 @@ export PATH=$PATH:/opt/rvm/bin:/opt/rvm/sbin
 
 \curl -sSL https://get.rvm.io | bash -s stable
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bashrc
 source ~/.bashrc
 source ~/.bash_profile
 
